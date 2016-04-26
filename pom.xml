@@ -69,6 +69,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>de.neuland-bfi</groupId>
+            <artifactId>jade4j</artifactId>
+            <version>1.1.4</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>chinese</finalName>
