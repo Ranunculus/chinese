@@ -19,7 +19,7 @@
           <element id="library" level="project" name="Maven: org.webjars:jquery:2.2.3" />
           <element id="library" level="project" name="Maven: org.webjars:webjars-locator:0.30" />
           <element id="library" level="project" name="Maven: org.webjars:webjars-locator-core:0.30" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.0" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-compress:1.9" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3" />
@@ -38,6 +38,8 @@
           <element id="library" level="project" name="Maven: org.ow2.asm:asm-tree:5.0.3" />
           <element id="library" level="project" name="Maven: org.ow2.asm:asm-analysis:5.0.3" />
           <element id="library" level="project" name="Maven: org.ow2.asm:asm-util:5.0.3" />
+          <element id="library" level="project" name="Maven: de.neuland-bfi:spring-jade4j:1.2.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
