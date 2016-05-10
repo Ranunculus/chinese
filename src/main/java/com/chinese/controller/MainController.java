@@ -5,6 +5,7 @@ import de.neuland.jade4j.template.JadeTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
@@ -19,12 +20,13 @@ public class MainController {
     private JadeConfiguration jadeConfiguration;
 
     @RequestMapping("/")
+    @ResponseBody
     public String showMainModel(){
         try {
-            ModelAndView modelAndView = new ModelAndView("main");
-            JadeTemplate template = jadeConfiguration.getTemplate(modelAndView.getViewName());
-            System.out.println(jadeConfiguration.renderTemplate(template, modelAndView.getModel()));
-            return jadeConfiguration.renderTemplate(template, modelAndView.getModel());
+            ModelAndView e = new ModelAndView("main");
+            e.getModel().put("title", "Finally");
+            JadeTemplate template = jadeConfiguration.getTemplate(e.getViewName());
+            return jadeConfiguration.renderTemplate(template, e.getModel());
         } catch (IOException e) {
             throw new IllegalArgumentException(e);
         }
