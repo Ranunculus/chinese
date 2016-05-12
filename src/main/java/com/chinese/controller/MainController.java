@@ -23,7 +23,7 @@ public class MainController {
     @ResponseBody
     public String showMainModel(){
         try {
-            ModelAndView e = new ModelAndView("main");
+            ModelAndView e = new ModelAndView("layout/layout");
             e.getModel().put("title", "Finally");
             JadeTemplate template = jadeConfiguration.getTemplate(e.getViewName());
             return jadeConfiguration.renderTemplate(template, e.getModel());
