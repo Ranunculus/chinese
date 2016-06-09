@@ -22,7 +22,7 @@ public class MainController {
     public String showMainModel(){
         try {
             ModelAndView e = new ModelAndView("layout/layout");
-            e.getModel().put("myText", "你好，近看! 这是编程人员的博客。我决定委弃我的在公司的工作，因为我要看别的外国和人");
+            e.getModel().put("myText", "你好，近看! 这是编程人员的博客。我决定委弃我的在公司的工作，因为我要看别的外国和人 স");
             JadeTemplate template = jadeConfiguration.getTemplate(e.getViewName());
             return jadeConfiguration.renderTemplate(template, e.getModel());
         } catch (IOException e) {
