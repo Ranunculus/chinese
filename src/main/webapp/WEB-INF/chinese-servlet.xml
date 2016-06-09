@@ -18,11 +18,9 @@
 
     <bean id="viewResolver" class="de.neuland.jade4j.spring.view.JadeViewResolver">
         <property name="configuration" ref="jadeConfiguration" />
-        <!-- rendering nice html formatted error pages for development -->
         <property name="renderExceptions" value="true" />
         <property name="prefix" value="/" />
         <property name="suffix" value=".jade" />
-        <property name="contentType" value="text/html; charset=utf-8"/>
     </bean>
 
     <bean name="mainController" class="com.chinese.controller.MainController">
