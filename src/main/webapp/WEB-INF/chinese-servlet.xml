@@ -24,7 +24,9 @@
     </bean>
 
     <bean name="mainController" class="com.chinese.controller.MainController">
-        <property name="jadeConfiguration" ref="jadeConfiguration"/>
+        <constructor-arg ref="jadeConfiguration"/>
+        <!--<property name="jadeConfiguration" ref="jadeConfiguration"/>-->
+
     </bean>
     <mvc:resources mapping="/resources/**" location="/resources/"/>
     <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>

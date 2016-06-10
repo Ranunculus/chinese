@@ -72,6 +72,10 @@
                     <groupId>org.webjars</groupId>
                     <artifactId>jquery</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>org.webjars</groupId>
+                    <artifactId>tether</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <dependency>
