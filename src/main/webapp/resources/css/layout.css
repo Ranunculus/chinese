@@ -1,0 +1,11 @@
+@font-face {
+    font-family: chinese-font-family;
+    src: url(/fonts/simkai.ttf) format('truetype');
+}
+
+p.without-tff {
+    font-family: Georgia, 'Times New Roman', 'KaiTi', '楷体', STKaiti, '华文楷体', serif;
+}
+p.with-tff {
+    font-family: chinese-font-family;
+}
